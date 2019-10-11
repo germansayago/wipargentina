@@ -8,6 +8,10 @@ export default {
     fallback: true
   },
   head: {
+    // this htmlAttrs you need
+    htmlAttrs: {
+      lang: 'es',
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
