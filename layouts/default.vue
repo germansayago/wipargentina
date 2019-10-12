@@ -4,7 +4,6 @@
     <nuxt />
   </div>
 </template>
-
 <script>
 import Navbar from '@/components/navbar'
 export default {
@@ -13,4 +12,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  body{
+    background-color: orange;
+  }
+</style>
 
