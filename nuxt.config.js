@@ -4,6 +4,9 @@ export default {
   /*
   ** Headers of the page
   */
+  router: {
+    // base: '/landingvue/'
+  },
   generate: {
     fallback: true
   },

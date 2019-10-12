@@ -1,24 +1,28 @@
-<template lang="pug">
-  div.hero
-    h1 Hello {{ name }}
+<template>
+  <section class="hero" :style="{ backgroundImage: `url(${backgroundUrl})` }">
+    <h1>{{ name }}</h1>
+  </section>
 </template>
 
 <script>
+import backgroundUrl from '~/assets/images/wipargentina-1.jpg'
+
 export default {
   data() {
     return {
-      name: 'Hero'
+      name: 'Hero',
+      backgroundUrl
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
   .hero{
-    background-color: red;    
-    min-height: 300px;
-    h1{
-      background-color: green;
-    }
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
   }
 </style>

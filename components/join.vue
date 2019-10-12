@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <h1>join</h1>
-  </div>
+  </section>
 </template>
