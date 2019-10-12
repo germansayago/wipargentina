@@ -17,12 +17,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss">
   .hero{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    background-size: cover;
+    background-position: center center;
   }
 </style>
