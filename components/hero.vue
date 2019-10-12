@@ -1,12 +1,24 @@
-<template>
-  <div class="hero">
-    <h1>hero</h1>
-  </div>
+<template lang="pug">
+  div.hero
+    h1 Hello {{ name }}
 </template>
 
-<style>
+<script>
+export default {
+  data() {
+    return {
+      name: 'Hero'
+    }
+  }
+}
+</script>
+
+<style lang="scss">
   .hero{
-    background-color: blue;
+    background-color: red;    
     min-height: 300px;
+    h1{
+      background-color: green;
+    }
   }
 </style>

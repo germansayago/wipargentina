@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
       <!-- <a class="navbar-item" href="./">
         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
       </a> -->
       <nuxt-link to="" class="navbar-item">
-        <img src="@/assets/images/wip-color.svg" width="112" height="28">
+        <img src="@/assets/images/wip-color.svg" width="80" height="28">
       </nuxt-link>
 
       <a
@@ -21,27 +21,31 @@
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
-    </div>
+      </div>
 
-    <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{'is-active': isOpen}">     
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button">
-              facebook
-            </a>
-            <a class="button">
-              instagram
-            </a>
-            <a class="button">
-              linkedin
-            </a>
+      <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{'is-active': isOpen}">     
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <nuxt-link to="">
+              <span class="icon is-large">
+                <i class="fab fa-lg fa-facebook"></i>
+              </span> 
+            </nuxt-link>
+            <nuxt-link to="">
+              <span class="icon is-large">
+                <i class="fab fa-lg fa-instagram"></i>
+              </span> 
+            </nuxt-link>
+            <nuxt-link to="">
+              <span class="icon is-large">
+                <i class="fab fa-lg fa-linkedin"></i>
+              </span> 
+            </nuxt-link>
           </div>
         </div>
       </div>
     </div>
   </nav>
-  </div>
 </template>
 
 <script>
@@ -53,3 +57,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .navbar-item{
+    background-color: orange;
+  }
+</style>
