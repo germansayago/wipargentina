@@ -1,0 +1,13 @@
+@import 'bulma/sass/utilities/_all.sass';
+
+$cmb: orange;
+
+body{
+  background-color: $cmb;
+  h1{
+    color: red;
+    font-size: 2rem;
+  }
+}
+
+@import '~bulma';
