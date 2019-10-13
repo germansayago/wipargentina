@@ -1,6 +1,17 @@
 <template>
-  <section class="hero" :style="{ backgroundImage: `url(${backgroundUrl})` }">
-    <h1>{{ name }}</h1>
+  <section class="hero is-link is-fullheight" :style="{ backgroundImage: `url(${backgroundUrl})` }">   
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">¿Inauguramos mañana?</h1>
+        <h2 class="title is-2">Vender por internet nunca fue tan fácil</h2>
+        <h3 class="subtitle is-3">¿Estás listo para surfear esta ola?</h3>
+        <div class="cta">
+          <a href="#cta" class="has-text-white">
+            <i class="fas fa-3x fa-angle-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -10,7 +21,6 @@ import backgroundUrl from '~/assets/images/wipargentina-1.jpg'
 export default {
   data() {
     return {
-      name: 'Hero',
       backgroundUrl
     }
   }
@@ -19,12 +29,20 @@ export default {
 
 <style lang="scss">
   .hero{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-size: cover;
-    background-position: center center;
+    text-align: center;
+    margin-bottom: 30px;
+    .cta {
+      -webkit-animation: action 0.5s infinite  alternate;
+      animation: action 0.5s infinite  alternate;
+      margin-top: 50px;      
+    }
+    @-webkit-keyframes action {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-15px); }
+    }
+    @keyframes action {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-15px); }
+    }      
   }
 </style>
