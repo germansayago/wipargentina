@@ -31,7 +31,7 @@ export default {
     if (hero.style.position !== 'hero') {
       var heroTop = hero.offsetTop;
       document.addEventListener('scroll', function () {
-        if(window.scrollY > 80) {
+        if(window.scrollY > 240) {
           navbar.classList.add('is-primary')
           navbar.classList.remove('is-spaced')
         } else {
@@ -41,7 +41,7 @@ export default {
       });
     }
 
-    if(window.scrollY !== 0){
+    if(window.scrollY > 240){
       navbar.classList.add('is-primary')
       navbar.classList.remove('is-spaced')
     }
