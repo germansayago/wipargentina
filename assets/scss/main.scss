@@ -29,14 +29,17 @@ $input-shadow: none;
 @import "bulma/sass/layout/hero.sass";
 @import "bulma/sass/layout/section.sass";
 
-body{
-  background-color: $green-light;
-  .section{
-    text-align: center;
-    background-color: #ccc;
-    margin-bottom: 30px;
-    padding: 200px 0;
-  }
-}
-
 @import '~bulma';
+
+body{
+  //background-color: $green-light;
+}
+.navbar{
+  background-color: rgba($primary, 1);
+}
+.section{
+  text-align: center;
+  background-color: #ccc;
+  margin-bottom: 30px;
+  padding: 200px 0;
+}

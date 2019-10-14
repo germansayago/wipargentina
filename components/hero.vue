@@ -23,6 +23,30 @@ export default {
     return {
       backgroundUrl
     }
+  },
+  mounted() {
+    var hero = document.querySelector('.hero');
+    var navbar = document.querySelector('.navbar');    
+
+    if (hero.style.position !== 'hero') {
+      var heroTop = hero.offsetTop;
+      document.addEventListener('scroll', function () {
+        if(window.scrollY > 80) {
+          navbar.classList.add('is-primary')
+          navbar.classList.remove('is-spaced')
+        } else {
+          navbar.classList.remove('is-primary')
+          navbar.classList.add('is-spaced')
+        }
+      });
+    }
+
+    if(window.scrollY !== 0){
+      navbar.classList.add('is-primary')
+      navbar.classList.remove('is-spaced')
+    }
+
+    console.log(window.scrollY);
   }
 }
 </script>

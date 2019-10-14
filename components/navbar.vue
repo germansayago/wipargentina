@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-dark is-fixed-top is-primary" role="navigation" aria-label="main navigation" id="nav">
+  <nav class="navbar is-spaced is-fixed-top sticky" role="navigation" aria-label="main navigation" id="nav">
     <div class="container">
       <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
@@ -57,5 +57,8 @@ export default {
 </script>
 
 <style lang="scss">
-
+  .navbar {
+    background-color: transparent;
+    transition: 0.35s;
+  }
 </style>
