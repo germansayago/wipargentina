@@ -17,36 +17,11 @@
 
 <script>
 import backgroundUrl from '~/assets/images/wipargentina-1.jpg'
-
 export default {
   data() {
     return {
       backgroundUrl
     }
-  },
-  mounted() {
-    var hero = document.querySelector('.hero');
-    var navbar = document.querySelector('.navbar');    
-
-    if (hero.style.position !== 'hero') {
-      var heroTop = hero.offsetTop;
-      document.addEventListener('scroll', function () {
-        if(window.scrollY > 240) {
-          navbar.classList.add('is-primary')
-          navbar.classList.remove('is-spaced')
-        } else {
-          navbar.classList.remove('is-primary')
-          navbar.classList.add('is-spaced')
-        }
-      });
-    }
-
-    if(window.scrollY > 240){
-      navbar.classList.add('is-primary')
-      navbar.classList.remove('is-spaced')
-    }
-
-    console.log(window.scrollY);
   }
 }
 </script>
@@ -68,5 +43,20 @@ export default {
       0% { transform: translateY(0); }
       100% { transform: translateY(-15px); }
     }      
+  }
+
+  @media screen and (max-width: 767px) {
+    .hero-body{
+      font-size: .9rem;
+      .is-1{
+        font-size: 2.4rem;
+      }
+      .is-2{
+        font-size: 2rem;
+      }
+      .is-3{
+        font-size: 1.6rem;
+      }
+    }
   }
 </style>
