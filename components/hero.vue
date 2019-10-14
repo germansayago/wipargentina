@@ -5,10 +5,8 @@
         <h1 class="title is-1">¿Inauguramos mañana?</h1>
         <h2 class="title is-2">Vender por internet nunca fue tan fácil</h2>
         <h3 class="subtitle is-3">¿Estás listo para surfear esta ola?</h3>
-        <div class="cta">
-          <a href="#cta" class="has-text-white">
-            <i class="fas fa-3x fa-angle-down"></i>
-          </a>
+        <div class="cta has-text-white">
+          <i class="fas fa-3x fa-angle-down"></i>
         </div>
       </div>
     </div>

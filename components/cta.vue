@@ -1,6 +1,14 @@
 <template>
-  <section class="section">
-    <h1>cta</h1>
-    <a href="" class="button is-primary">button</a>
+  <section class="hero is-info">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Primary title
+        </h1>
+        <h2 class="subtitle">
+          Primary subtitle
+        </h2>
+      </div>
+    </div>
   </section>
 </template>

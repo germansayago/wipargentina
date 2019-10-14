@@ -10,6 +10,7 @@ $green-light: #009B8F;
 // Update Bulma's global variables
 // $family-sans-serif: "Nunito", sans-serif;
 $primary: $purple;
+$info: $green-light;
 $link: $green-light;
 $link-hover: lighten($green-light, 10%);
 
@@ -43,8 +44,21 @@ body{
   }
 }
 .section{
-  text-align: center;
-  background-color: #ccc;
-  margin-bottom: 30px;
-  padding: 200px 0;
+  padding: 5rem 0;
+  // border-bottom: 1px solid #eee;
 }
+.title{
+  color: $primary;
+}
+.subtitle{
+  color: #777;
+}
+.column{}
+
+@media screen and (max-width: 767px){
+  .section{
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+}
+
